@@ -194,7 +194,15 @@ body {
    }
 }
 
+@media(max-width: 992px) {
+   .content-header {
+      height: 70px;
+   }
+}
+
 @media( max-width: 576px ) {
+
+
    
    .content-header__flexbox {
       padding: 0 30px;
@@ -481,6 +489,7 @@ body {
       }
 
       &__content {
+         
          padding-top: 16px;
          margin-left: 50%;
          transform: translateX(-50%);

@@ -162,6 +162,11 @@ body {
   border-bottom: 1px solid currentColor;
 }
 
+@media (max-width: 992px) {
+  .content-header {
+    height: 70px;
+  }
+}
 @media (max-width: 576px) {
   .content-header__flexbox {
     padding: 0 30px;
