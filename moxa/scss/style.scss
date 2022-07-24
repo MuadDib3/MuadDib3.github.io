@@ -709,7 +709,7 @@ body {
    .about {
 
 		&__text {
-         margin-bottom: 50px;
+         margin-bottom: 20px;
       }
    }
    .about-text {
@@ -736,15 +736,20 @@ body {
 		&__title {
          font-size: 24px;
          line-height: 32px;
+         margin-bottom: 16px;
       }
 
 		&__subtitle {
+         margin-bottom: 16px;
          
       }
 
 		&__numbers {}
 
-		&__item {}
+		&__item {
+         font-size: 16px;
+         line-height: 16px;
+      }
    }
 }
 
@@ -753,7 +758,6 @@ body {
 .about__stats {
    display: flex;
    justify-content: space-between;
-   height: 152px;
    margin-bottom: 120px;
 }
 
@@ -762,9 +766,7 @@ body {
    &__item {
       max-width: 354px;
       width: 100%;
-      height: 152px;
-      padding-top: 21px;
-      
+      height: 152px;           
       
       &:nth-child(2) {
          border-left: none;
@@ -773,6 +775,7 @@ body {
    }
 
    &__number {
+      padding-top: 21px;
       font-weight: 400;
       font-size: 56px;
       line-height: 64px;
@@ -794,12 +797,25 @@ body {
 }
 
 @media (max-width: 576px) {
+
+   .about__stats {
+      height: 130px;
+      margin-bottom: 100px;
+   }
+
+   .about-stats__item {
+      height: 130px;
+   }
+
+
    .about-stats__number {
+      padding-top: 13px;
       font-size: 38px;
-      line-height: 48px;
+      line-height: 38px;
    }
 
    .about-stats__text {
+      padding-top: 5px;
       font-size: 13px;
       letter-spacing: 0.5px;
    }
