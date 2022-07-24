@@ -14,11 +14,6 @@ body {
    color: $black;
 }
 
-.wrapper {
-   width: 100%;
-   overflow: hidden;
-}
-
 .container {
    margin: 0 auto;
    max-width: 1140px;
@@ -1225,13 +1220,13 @@ body {
   
    .services-list {
       &__content {
-         margin: -18px;
+         margin: -17px;
       }
 
 		&__item {
          width: 100%;
          padding: 30px 6%;
-         margin: 18px;
+         margin: 17px;
       }
    }
 }
@@ -1332,7 +1327,8 @@ body {
       }
       
       &__dicscription {
-         margin-top: 0;
+         margin-top: 5px;
+         margin-bottom: 8px;
       }
    }
 
@@ -1348,8 +1344,8 @@ body {
 
    &__subscribe {
       background-color: #E6E3DE;
-      height: 176px;
       padding-top: 60px;
+      padding-bottom: 60px;
    }
 
    &__licence {
@@ -1431,21 +1427,31 @@ body {
 }
 
 @media (max-width: 500px) {
+
+   .footer {
+
+      &__subscribe {
+         background-color: #E6E3DE;
+         padding-top: 30px;
+         padding-bottom: 30px;
+      }
+   }
    .footer-subscribe {
       
       &__text {
-         font-size: 17px;
+         font-size: 19px;
+         line-height: 40px;
       }
 
       &__input {
          &::placeholder {
-            font-size: 16px;
+            font-size: 17px;
          }
       }
 
       &__button {
          width: 100px;
-         font-size: 16px;
+         font-size: 17px;
       }
    }
 }
@@ -1465,6 +1471,7 @@ body {
    &__item {
       color: #fff;
       padding-right:15px;
+      font-size: 14px;
       line-height: 40px;
       img {
          height: 40px;
@@ -1475,11 +1482,14 @@ body {
    &__links {
       display: flex;
       justify-content: space-between;
+      margin-left: 16px;
       max-width: 388px;
       width: 100%;
       height: 40px;
+      padding-top: 11px;
       color: #fff;
-      line-height: 40px;
+      font-size: 16px;
+      line-height: 18px;
    }
 
    &__social {
@@ -1512,5 +1522,18 @@ body {
          left: 50%;
          transform: translate(-50%, -50%);
       }
+   }
+}
+
+@media (max-width: 500px) {
+
+   .footer-links__item {
+      font-size: 14px;
+      }
+
+   .footer-licence__item {
+      font-size: 12px;
+      line-height: 22px;
+      padding-right: 5px;
    }
 }

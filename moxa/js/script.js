@@ -15,7 +15,7 @@ $(window).scroll(function(){
 });
 
 
-document.addEventListener('mousewheel', scroll, false);
+// document.addEventListener('mousewheel', scroll, false);
 
 // const logoDecoration = document.getElementsByClassName('logo-decoration');
 // console.log(logoDecoration);

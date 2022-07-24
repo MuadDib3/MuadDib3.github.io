@@ -8,11 +8,6 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
-   line-height: 1.15; /* 1 */
-   -webkit-text-size-adjust: 100%; /* 2 */
- }
- 
  /* Sections
     ========================================================================== */
  
@@ -307,8 +302,8 @@
   */
  
  ::-webkit-file-upload-button {
-   -webkit-appearance: button; /* 1 */
-   font: inherit; /* 2 */
+   -webkit-appearance: button;
+   font: inherit;
  }
  
  /* Interactive
@@ -382,8 +377,7 @@ ul[class],
 ol[class] {
   list-style: none;
   padding-left: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  
 }
 
 /* Элементы a сбрасываем до дефолтных стилей */
