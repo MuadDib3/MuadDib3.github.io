@@ -14,6 +14,17 @@ $(window).scroll(function(){
    }
 });
 
+var scroll = function(e) {
+   // compute state
+   if (stopScrollX || stopScrollY) {
+       e.preventDefault();              // this one is the key
+       e.stopPropagation();
+       window.scroll(scrollToX, scrollToY);
+   }
+}
+
+document.addEventListener('mousewheel', scroll, false);
+
 // const logoDecoration = document.getElementsByClassName('logo-decoration');
 // console.log(logoDecoration);
 // window.addEventListener('wheel', function () {
