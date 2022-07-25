@@ -15,10 +15,22 @@ $(window).scroll(function(){
 });
 
 
-// document.addEventListener('mousewheel', scroll, false);
 
-// const logoDecoration = document.getElementsByClassName('logo-decoration');
-// console.log(logoDecoration);
-// window.addEventListener('wheel', function () {
-//    logoDecoration.classList.add ("active");
-// )};
+function getScroll () {
+   const scroll = window.pageYOffset;
+   return scroll;
+}
+
+function clickOnLink () {
+   document.location.href = "/moxa/index.html";
+}
+
+
+function backToCurrentScroll () {
+   document.location.href = "/moxa/index.html";
+   window.scrollTo(0, scroll);
+}
+
+function seeScroll () {
+   console.log(getScroll);
+}
