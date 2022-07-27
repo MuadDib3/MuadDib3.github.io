@@ -182,6 +182,7 @@ body {
 
    &__item {
    display: block;
+   cursor: pointer;
    height: 24px;
    font-family: 'Bai Jamjuree';
    font-style: normal;
@@ -269,7 +270,7 @@ body {
 .logo-decoration_scroll {
    animation-name: scroll-rotate;
    animation-duration: 5s;
-   animation-iteration-count: infinite;
+   animation-iteration-count: 1;
    animation-timing-function: ease-in-out;
 }
 
