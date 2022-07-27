@@ -1,0 +1,63 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внешние отступы */
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+  padding-left: 0;
+  
+}
+
+/* Элементы a сбрасываем до дефолтных стилей */
+a {
+  text-decoration:none;
+  color: currentColor;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+}
+
+
+/* Наследуем шрифты для инпутов и кнопок */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1; /* 1 */
+  margin: 0; /* 2 */
+}
+
+
