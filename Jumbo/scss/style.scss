@@ -1,13 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Open+Sans:wght@400;500;600;700&display=swap');
+
 body {
    font-size: 16px;
    font-family: 'Michroma', sans-serif;
 }
 
 .container {
-   max-width: 1280px;
+   max-width: 1400px;
    width: 100%;
    margin: 0 auto;
    padding: 0 60px;
@@ -131,12 +133,150 @@ body {
          display: flex;
          justify-content: space-between;
          margin: 0 auto;
-         padding: 0 5%;
+         padding: 0 5% 160px 5%;
       }
 
       &__icons-item {
          margin-right: 15px;
          height: 56px;
-         padding-bottom: 160px;
+         
       }
+}
+
+//!---------------------------product-------------------------
+
+.product {
+
+   &__category {
+      margin-top: -50px;
+      margin-bottom: 40px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 104%;
+      /* identical to box height, or 17px */
+      text-align: center;
+      text-transform: uppercase;
+      /* Near Black */
+      color: #0F1319;
+   }
+
+   &__title {
+      margin: 0 auto;
+      margin-bottom: 80px;
+      max-width: 960px;
+      width: 100%;
+      margin-bottom: 80px;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 104%;      /* or 50px */   
+      /* Near Black */ 
+      text-align: center;     
+      color: #0F1319;      
+   }
+
+   &__nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 80px;
+      gap: 8px;
+   }
+
+   &__button {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 80px;
+      width: 200px;
+      height: 56px;
+      background: linear-gradient(135deg, #B2A3FA 0%, #97DAFF 99.99%);
+      border-radius: 100px;
+      font-family: 'Michroma';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 56px;
+      /* identical to box height, or 171% */      
+      text-align: center;
+      letter-spacing: 0.02em;      
+      /* Near Black */      
+      color: #0F1319;      
+   }
+}
+
+.product-nav {
+
+   &__item {
+      padding: 24px;   
+      max-width: 200px;
+      min-width: 160px;
+      width: 100%;
+      height: 160px;
+      border-radius: 16px;
+      padding: 24px;
+      &:nth-child(1) {
+         background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(178, 163, 250, 0.32) 100%);
+         .product-nav__icon {
+            background: #B2A3FA;
+         }
+      }
+      &:nth-child(2) {
+         .product-nav__icon {
+            background: #CEEA7E;
+         }
+         background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(206, 234, 126, 0.32) 100%);
+      } 
+      &:nth-child(3) {
+         .product-nav__icon {
+            background: #FFB393;     
+         }
+         background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 179, 147, 0.32) 100%);
+      } 
+      &:nth-child(4) {
+         .product-nav__icon {
+            background: #97DAFF;
+         }
+         background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(151, 218, 255, 0.32) 100%);
+      } 
+      &:nth-child(5) {
+         .product-nav__icon {
+            background: #FFA6BB;
+         }
+         background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 166, 187, 0.32) 100%);
+      }   
+      &:nth-child(6) {
+         .product-nav__icon {
+            background: #FFE484;
+         }
+         background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 228, 132, 0.32) 100%);
+      }
+      }
+
+   &__icon {
+   width: 40px;
+   height: 40px;
+   border-radius: 100px;
+   position: relative;
+   margin-bottom: 26px;
+   img {
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+   }
+
+   &__text {
+      font-family: 'Michroma';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      
+      /* Near Black */
+      
+      color: #0F1319;      
+   }
 }
