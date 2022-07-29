@@ -6,18 +6,18 @@
 body {
    font-size: 16px;
    font-family: 'Michroma', sans-serif;
+   color: #0F1319
 }
 
 .container {
-   max-width: 1400px;
+
+   max-width: 1440px;
    width: 100%;
    margin: 0 auto;
-   padding: 0 60px;
+   padding: 0 80px;
 }
 
-
-//!-------------------------header--------------------
-
+//!----------------------------header-------------------
 .header {
    
    position: fixed;
@@ -25,9 +25,8 @@ body {
    left: 50%;
    transform: translateX(-50%);
    width: 100%;
-   z-index: 100;
-   background: rgb(15,19,25);
-   background: linear-gradient(180deg, rgba(15,19,25,1) 79%, rgba(15,19,25,0.5) 93%, rgba(255,255,255,0) 100%);
+   z-index: 1000;
+   // background: linear-gradient(180deg, rgba(15,19,25,1) 79%, rgba(15,19,25,0.5) 93%, rgba(255,255,255,0) 100%);
 } 
 
 .header-content {
@@ -72,211 +71,4 @@ body {
          
       }
 
-}
-
-
-//!---------------------------------title---------------------
-
-.title {
-   
-   background: radial-gradient(circle, rgba(4,255,177,0.15) 0%, rgba(255,255,255,0) 70%), 
-   radial-gradient(circle, rgba(255,50,136,0.15) 0%, rgba(255,255,255,0) 80%),
-   radial-gradient(circle, rgba(49,155,231,0.15) 0%, rgba(255,255,255,0) 80%),
-   radial-gradient(circle, rgba(192,34,157,0.15) 0%, rgba(255,255,255,0) 80%),
-   linear-gradient(180deg, rgba(15,19,25,1) 40%, rgba(15,19,25,0.9) 60%, rgba(15,19,25,0.75) 70%, rgba(15,19,25,0.3) 85%, rgba(255,255,255,0) 100%);
-   background-position: -20% 200px, 130% 150px, 70% 400px, 40% 500px, 0 0;
-   background-size: 1100px 1000px, 1000px 1000px, 1000px 1000px, 700px 700px, 100% 100%;
-   background-repeat: no-repeat, no-repeat;
-
-   
-   &__item {
-      padding-top: 190px;
-      margin-left: 50%;
-      transform: translateX(-50%);
-      max-width: 960px;
-      width: 100%;
-      font-family: 'Michroma';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 68px;
-      line-height: 104%;
-      /* or 71px */
-      
-      text-align: center;
-      letter-spacing: -0.01em;
-      
-      /* Near White */
-      
-      color: #EEF2F8;
-   }
-
-      &__button {
-         margin-top: 56px;
-         margin-bottom: 60px;
-         margin-left: 50%;
-         transform: translateX(-50%);
-         font-family: 'Michroma', sans-serif;
-         cursor: pointer;
-         width: 183px;
-         height: 56px;
-         line-height: 52px;
-         text-align: center;
-         border-radius: 28px; 
-         background: linear-gradient(135deg, #BFF489 0%, #97DAFF 100%);
-      }
-
-      &__galery {
-         padding-bottom: 80px;
-      }
-      
-      &__icons {
-         display: flex;
-         justify-content: space-between;
-         margin: 0 auto;
-         padding: 0 5% 160px 5%;
-      }
-
-      &__icons-item {
-         margin-right: 15px;
-         height: 56px;
-         
-      }
-}
-
-//!---------------------------product-------------------------
-
-.product {
-
-   &__category {
-      margin-top: -50px;
-      margin-bottom: 40px;
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 104%;
-      /* identical to box height, or 17px */
-      text-align: center;
-      text-transform: uppercase;
-      /* Near Black */
-      color: #0F1319;
-   }
-
-   &__title {
-      margin: 0 auto;
-      margin-bottom: 80px;
-      max-width: 960px;
-      width: 100%;
-      margin-bottom: 80px;
-      font-weight: 400;
-      font-size: 48px;
-      line-height: 104%;      /* or 50px */   
-      /* Near Black */ 
-      text-align: center;     
-      color: #0F1319;      
-   }
-
-   &__nav {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      margin-bottom: 80px;
-      gap: 8px;
-   }
-
-   &__button {
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 80px;
-      width: 200px;
-      height: 56px;
-      background: linear-gradient(135deg, #B2A3FA 0%, #97DAFF 99.99%);
-      border-radius: 100px;
-      font-family: 'Michroma';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 56px;
-      /* identical to box height, or 171% */      
-      text-align: center;
-      letter-spacing: 0.02em;      
-      /* Near Black */      
-      color: #0F1319;      
-   }
-}
-
-.product-nav {
-
-   &__item {
-      padding: 24px;   
-      max-width: 200px;
-      min-width: 160px;
-      width: 100%;
-      height: 160px;
-      border-radius: 16px;
-      padding: 24px;
-      &:nth-child(1) {
-         background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(178, 163, 250, 0.32) 100%);
-         .product-nav__icon {
-            background: #B2A3FA;
-         }
-      }
-      &:nth-child(2) {
-         .product-nav__icon {
-            background: #CEEA7E;
-         }
-         background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(206, 234, 126, 0.32) 100%);
-      } 
-      &:nth-child(3) {
-         .product-nav__icon {
-            background: #FFB393;     
-         }
-         background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 179, 147, 0.32) 100%);
-      } 
-      &:nth-child(4) {
-         .product-nav__icon {
-            background: #97DAFF;
-         }
-         background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(151, 218, 255, 0.32) 100%);
-      } 
-      &:nth-child(5) {
-         .product-nav__icon {
-            background: #FFA6BB;
-         }
-         background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 166, 187, 0.32) 100%);
-      }   
-      &:nth-child(6) {
-         .product-nav__icon {
-            background: #FFE484;
-         }
-         background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 228, 132, 0.32) 100%);
-      }
-      }
-
-   &__icon {
-   width: 40px;
-   height: 40px;
-   border-radius: 100px;
-   position: relative;
-   margin-bottom: 26px;
-   img {
-      position: absolute;
-      display: block;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-   }
-   }
-
-   &__text {
-      font-family: 'Michroma';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 23px;
-      
-      /* Near Black */
-      
-      color: #0F1319;      
-   }
 }

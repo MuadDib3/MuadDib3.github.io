@@ -60,4 +60,9 @@ textarea {
   margin: 0; /* 2 */
 }
 
+/*обнуляем стили button */
 
+button {
+   border: none;
+   padding: 0;
+}
