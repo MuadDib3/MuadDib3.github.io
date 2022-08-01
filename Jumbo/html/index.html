@@ -13,15 +13,18 @@
 <body>
    <header class="header header-home">
       <div class="container">
-         <div class="header-content">
-            <img src="/Jumbo/img/logo.svg" alt="logo">
-            <div class="header-content__links">
-               <a href="" class="header-content__links-item">Product</a>
-               <a href="" class="header-content__links-item">Use Cases</a>
-               <a href="" class="header-content__links-item">Customers</a>
-               <a href="" class="header-content__links-item">Blog</a>
+         <div class="header-content" id="header-content">
+            <div class="header-content__logo "><img src="/Jumbo/img/logo.svg" alt="logo"></div>
+            <div class="header-content__links" id="header-content__links">
+               <a href="" class="header-links__item">Product</a>
+               <a href="" class="header-links__item">Use Cases</a>
+               <a href="" class="header-links__item">Customers</a>
+               <a href="" class="header-links__item">Blog</a>
             </div>
-            <button type="button" class="form-button header-content__button">Request demo</button>
+            <div class="header-content__menu">
+               <button type="button" class="form-button header-menu__button" id="header-menu__button" onclick="toggleForm()">Request demo</button>
+               <div class="header-menu__burger" id="header-menu__burger"></div>
+            </div>
          </div>
       </div>
    </header>
@@ -29,7 +32,7 @@
       <section class="title">
          <div class="container">
             <h1 class="title__item">Launch a video platform as unique and powerful as your content.</h1>
-            <button type="button" class="form-button title__button">Request demo</button>
+            <button type="button" class="form-button title__button" onclick="toggleForm()">Request demo</button>
             <div class="title__galery">
                <img src="/Jumbo/img/home/galery.png" alt="">
             </div>
@@ -81,10 +84,10 @@
       </section>
       <section class="use-cases">
          <div class="container">
-            <div class="use-cases__content">
+            <div class="use-cases-content">
                <div class="use-cases__text">
                   <div class="use-cases-text__category">Use Cases</div>
-                  <h2 class="use-cases-text__title">Experience limitless possibilities with ultimate control</h2>
+                  <h2 class="use-cases-text__title">Experience limitless possibilities with&nbsp; ultimate control</h2>
                   <div class="use-cases-text__nav">
                      <div class="use-cases-text__nav-item">Events
                         <div class="use-cases-text__nav-description">Leverage launch party backing. Success gamification leverage A/B testing partner network user experience infrastructure facebook niche market branding sales infographic alpha release.</div>
@@ -141,7 +144,7 @@
          <div class="footer__text">
             <h3 class="footer-text__title">Ready to see Jumbo in action? </h3>
             <div class="footer-text__text">Let us show you how it works with a demo and free consultation.</div>
-            <button class="form-button footer-text__button">Request demo</button>
+            <button class="form-button footer-text__button" onclick="toggleForm()">Request demo</button>
          </div>
          <div class="footer__links">
             <div class="footer-links__copyright">
@@ -179,6 +182,42 @@
          </div>
       </div>
    </footer>
+
+<!-- modals -->
+   <div class="modal" id="modal-demo">
+      <div class="modal__demo">
+         <div class="modal-demo__title"><div class="modal-demo__close" onclick="toggleForm()"></div>
+            <h3 class="modal-title__title">See how Jumbo <br> works for you</h3>
+            <div class="modal-title__text">Complete the form to schedule a 1-on-1 consultation with our sales team. This 15 minute meeting will allow us to hear your needs and discover how Jumbo can help you.</div>
+            <div class="modal-title__icons">
+               <div class="modal-icons__item"><img src="/Jumbo/img/home/modal-icon1.svg" alt=""></div>
+               <div class="modal-icons__item"><img src="/Jumbo/img/home/modal-icon2.svg" alt=""></div>
+               <div class="modal-icons__item"><img src="/Jumbo/img/home/modal-icon3.svg" alt=""></div>
+               <div class="modal-icons__item"><img src="/Jumbo/img/home/modal-icon4.svg" alt=""></div>
+            </div>
+         </div>
+         <form action="#" class="modal-demo__form">
+            <div class="modal-form__title">Request a Demo</div>
+            <div class="modal-form__item">
+               <div class="modal-form-item__title">First Name*</div>
+               <input class="modal-form-item__input" type="text" required name="firtsName" id="">
+            </div>
+            <div class="modal-form__item">
+               <div class="modal-form-item__title">Last Name*</div>
+               <input class="modal-form-item__input" type="text" required name="lastName" id="">
+            </div>
+            <div class="modal-form__item">
+               <div class="modal-form-item__title">Email Address*</div>
+               <input class="modal-form-item__input" type="email" required name="emailAddress" id="">
+            </div>
+            <div class="modal-form__item">
+               <div class="modal-form-item__title">Company Name</div>
+               <input class="modal-form-item__input" type="text" name="companyName" id="">
+            </div>
+            <input class="modal-form-item__submit" type="submit" value="Schedule a Demo">
+         </form>
+      </div>
+   </div>
    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script src="/Jumbo/js/script.js"></script>

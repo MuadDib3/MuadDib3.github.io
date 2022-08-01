@@ -11,16 +11,36 @@
 
 //!---------------------------------title---------------------
 
+
+@keyframes background-anim {
+   0% {
+      background-position: -20% 200px, 130% 150px, 70% 400px, 40% 500px, 0 0;
+   }
+   25% {
+      background-position: -5% 50px, 70% 20px, 50% 400px, 50% 300px, 0 0;
+   }
+   50% {
+      background-position: -5% 100px, 80% 30px, 50% 300px, 60% 300px, 0 0;
+   }
+   100% {
+      background-position: -20% 200px, 130% 150px, 70% 400px, 40% 500px, 0 0;
+   }
+}
+
 .title {
    
    background: radial-gradient(circle, rgba(4,255,177,0.15) 0%, rgba(255,255,255,0) 70%), 
-   radial-gradient(circle, rgba(255,50,136,0.15) 0%, rgba(255,255,255,0) 80%),
-   radial-gradient(circle, rgba(49,155,231,0.15) 0%, rgba(255,255,255,0) 80%),
-   radial-gradient(circle, rgba(192,34,157,0.15) 0%, rgba(255,255,255,0) 80%),
+   radial-gradient(circle, rgba(255,50,136,0.15) 0%, rgba(255,255,255,0) 70%),
+   radial-gradient(circle, rgba(49,155,231,0.15) 0%, rgba(255,255,255,0) 70%),
+   radial-gradient(circle, rgba(192,34,157,0.15) 0%, rgba(255,255,255,0) 70%),
    linear-gradient(180deg, rgba(15,19,25,1) 40%, rgba(15,19,25,0.9) 60%, rgba(15,19,25,0.75) 70%, rgba(15,19,25,0.3) 85%, rgba(255,255,255,0) 100%);
-   background-position: -20% 200px, 130% 150px, 70% 400px, 40% 500px, 0 0;
-   background-size: 1100px 1000px, 1000px 1000px, 1000px 1000px, 700px 700px, 100% 100%;
-   background-repeat: no-repeat, no-repeat;
+   // background-position: -20% 200px, 130% 150px, 70% 400px, 40% 500px, 0 0;
+   background-size: 1100px 1000px, 1000px 1100px, 1000px 1000px, 1000px 1000px, 100% 100%;
+   background-repeat: no-repeat;
+   animation-name: background-anim;
+   animation-duration: 10s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
 
    
    &__item {
@@ -32,7 +52,7 @@
       font-family: 'Michroma';
       font-style: normal;
       font-weight: 400;
-      font-size: 68px;
+      font-size: 4.25rem;
       line-height: 104%;
       /* or 71px */
       
@@ -83,7 +103,7 @@
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 104%;
       /* identical to box height, or 17px */
       text-align: center;
@@ -99,7 +119,7 @@
       width: 100%;
       margin-bottom: 80px;
       font-weight: 400;
-      font-size: 48px;
+      font-size: 3rem;
       line-height: 104%;      /* or 50px */   
       /* Near Black */ 
       text-align: center;     
@@ -109,10 +129,12 @@
    &__nav {
       display: flex;
       justify-content:center;
-      flex-wrap: wrap;
       width: 100%;
       margin-bottom: 80px;
       gap: 16px;
+      @media (max-width: 1200px) {
+         flex-wrap: wrap;
+      }
    }
 
    &__button {
@@ -125,7 +147,7 @@
       font-family: 'Michroma';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 56px;
       /* identical to box height, or 171% */      
       text-align: center;
@@ -138,9 +160,9 @@
 .product-nav {
 
    &__item {
-      padding: 24px;   
+      padding: 20px;   
       max-width: 200px;
-      min-width: 160px;
+      min-width: 180px;
       width: 100%;
       height: 160px;
       border-radius: 16px;
@@ -202,7 +224,7 @@
       font-family: 'Michroma';
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 23px;
       
       /* Near Black */
@@ -213,25 +235,38 @@
 
 //!--------------------------use-cases--------------------------
 
-.use-cases {
-
-   margin-bottom: 80px;
-
-   &__content {
-      display: flex;
-      justify-content: space-between;
-      gap: 25px;
+.use-cases-content {
+   display: flex;
+   justify-content: space-between;
+   gap: 25px;
+   margin-bottom: 20px;
+   padding-bottom: 60px;
+   @media (max-width: 700px) {
+      flex-wrap: wrap;
+      align-items: center;
    }
+}
+
+.use-cases {
 
    &__text {
       max-width: 640px;
+      min-width: 425px;
       width: 100%;
+      max-height: 800px;
+      @media (max-width: 1024px) {
+         min-width: 300px;
+      }
    }
 
    &__img {
       max-width: 480px;
+      min-width: 300px;
       width: 100%;
       margin-top: 10px;
+      @media (max-width: 700px) {
+         margin: 0 auto;
+      }
    }
 }
 
@@ -242,7 +277,7 @@
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 104%;
       /* identical to box height, or 17px */      
       text-transform: uppercase;      
@@ -255,17 +290,24 @@
       font-family: 'Michroma';
       font-style: normal;
       font-weight: 400;
-      font-size: 48px;
+      font-size: 2,625rem;
       line-height: 104%;
       /* or 50px */   
       /* Near Black */ 
       color: #0F1319;
-      
+      @media (max-width: 1205px) {
+         &{
+            font-size: 2.5rem;
+         }
+      } 
    }
 
    &__nav {
       max-width: 480px;
       width: 100%;
+      @media (max-width: 700px) {
+         max-width: 100%;
+      }
    }
 
    &__nav-item {
@@ -274,7 +316,7 @@
       font-family: 'Michroma';
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 140%;      
       /* Near Black */      
       color: #0F1319;
@@ -296,7 +338,7 @@
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 150%;
       /* or 150% */           
       /* p/on light */      
@@ -321,10 +363,7 @@
       /* Near Black */      
       color: #0F1319;
       display: none;
-      
-      .openText {
-         height: fit-content;
-      }
+
    }
 }
 .use-cases-img {
@@ -333,7 +372,7 @@
       
       position: relative;
       max-width: 480px;
-      min-width: 380px;
+      min-width: 300px;
       width: 100%;
       height: 720px;
       z-index: 1;
@@ -359,11 +398,12 @@
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 24px;
       /* or 150% */            
       /* White */     
-      color: #FFFFFF;            
+      color: #FFFFFF;
+           
    }
 
    &__name {
@@ -373,7 +413,7 @@
       font-family: 'Michroma';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 24px;
       /* identical to box height, or 171% */      
             /* White */      
@@ -386,7 +426,7 @@
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 16px;
       /* identical to box height, or 114% */      
       
@@ -454,7 +494,7 @@
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 104%;
       /* identical to box height, or 17px */      
       text-transform: uppercase;      
@@ -469,7 +509,7 @@
       font-family: 'Michroma';
       font-style: normal;
       font-weight: 400;
-      font-size: 48px;
+      font-size: 3rem;
       line-height: 104%;
       /* or 50px */           
       /* Near Black */      
@@ -493,7 +533,7 @@
       font-family: 'Michroma';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 56px; 
       letter-spacing: 0.02em;      
       /* Near Black */      
