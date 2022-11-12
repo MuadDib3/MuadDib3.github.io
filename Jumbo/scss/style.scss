@@ -30,9 +30,13 @@ body {
    padding: 0 80px;
    transition: all 200ms;
    @media (max-width: 1024px) {
-      &{ 
-         padding: 0 24px;
-      }
+         padding: 0 50px;
+   }
+   @media (max-width: 580px) {
+      padding: 0 20px;
+   }
+   @media (max-width: 450px) {
+      padding: 0 15px;
    }
 }
 
@@ -67,7 +71,7 @@ body {
    align-items: center;
    padding-top: 23px;
    padding-bottom: 23px;
-   height: 86px;
+   max-height: 83px;
    gap: 25px;
    color: white;
    font-family: 'Michroma', sans-serif;
@@ -76,6 +80,12 @@ body {
    transition: all 1s;
    @media (max-width: 950px)  {
       align-items: flex-start;
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+   @media (max-width: 750px) {
+      padding-top: 15px;
+      padding-bottom: 15px;
    }
 
    &.header-menu_active {
@@ -105,8 +115,7 @@ body {
          animation-direction: reverse;
 
          @media (max-width: 950px) {
-            // display: none;
-            
+            display: none;
             animation-duration: 1s;
             animation-fill-mode: backwards;
             animation-direction: reverse;
@@ -157,7 +166,6 @@ body {
       }
 
       &:hover {
-            line-height: 56px;
             color: #0F1319;
             outline : none;
             background: linear-gradient(135deg, #BFF489 0%, #97DAFF 100%);
@@ -165,10 +173,8 @@ body {
       @media (max-width: 950px) {
             width: 120px;
             height: 40px;
-            font-size: 1rem;
-            line-height: 1rem;
-            padding: 0 10px;
-            
+            font-size: 0.85rem;
+            line-height: 0.85rem;            
          }
 
    }

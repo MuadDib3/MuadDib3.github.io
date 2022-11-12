@@ -17,19 +17,10 @@ const menu = document.getElementById('header-content');
 const links = document.getElementById('header-content__links');
 const buttonHeader = document.getElementById('header-menu__button');
 
-function hideMenu () {
-   
-}
 
 burger.addEventListener("click", function() {
    burger.classList.toggle("header-menu_active");
    menu.classList.toggle("header-menu_active");
    links.classList.toggle("header-menu_active");
-   if (links.classList.contains("header-menu_active") === false){
-      links.setAttribute("style", "display: none;");
-   }
-   else {
-      links.setAttribute("style", "display: flex;");
-   };
    buttonHeader.classList.toggle("header-menu_active");
 });
