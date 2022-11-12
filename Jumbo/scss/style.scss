@@ -298,6 +298,12 @@ body {
       /* identical to box height, or 44px */   
       text-align: center;      
       }
+      @media (max-width: 750px) {
+         font-size: 2rem;
+      }
+      @media (max-width: 570px) {
+         font-size: 2rem;
+      }
 
    &__text {
       margin-bottom: 56px;
@@ -307,7 +313,10 @@ body {
       font-weight: 500;
       font-size: 1rem;
       line-height: 156%;
-      color: #B0B4B9;      
+      color: #B0B4B9;  
+      @media (max-width: 570px) {
+         font-size: 0.85rem;
+      }    
    }
 
    &__button {
@@ -317,6 +326,7 @@ body {
       outline: 2px solid #BFF489;
       background: none;
       color: white;
+      border-radius: 28px;
       &:hover {
          line-height: 56px;
          color: #0F1319;
@@ -412,7 +422,7 @@ body {
    }
 
    &__demo {
-      min-width: 358px;
+      min-width: 250px;
       max-width: 600px;
       width: 100%;
       // margin: 3% auto 0;
@@ -440,7 +450,7 @@ body {
 .modal-demo {
 
    &__close {
-      margin-left: 95%;
+      margin-left: 93%;
       width: 25px;
       height: 25px;
       position: relative;
@@ -473,7 +483,7 @@ body {
       
       padding-top: 20px;
       margin-bottom: 48px;
-      min-width: 358px;
+      min-width: 250px;
       max-width: 600px;
       width: 100%;
       position: relative;
@@ -493,7 +503,7 @@ body {
    }
 
    &__form {
-      min-width: 358px;
+      min-width: 250px;
       max-width: 600px;
       width: 100%;
       background: white;
@@ -505,8 +515,6 @@ body {
    }
 }
 .modal-title {
-
-
 
    &__title {
       margin-bottom: 24px;
@@ -611,5 +619,8 @@ body {
       background: #FFA6BB;
       border: none;
       border-radius: 100px;
+      @media (max-width: 750px) {
+         padding: 12px 30px;
+      }
    }
 }

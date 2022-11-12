@@ -346,7 +346,7 @@
       line-height: 140%;      
       color: #0F1319;
       height: auto;
-      max-height: 30px;
+      max-height: 40px;
       overflow: hidden;   
       transition: all 350ms;   
       &.use-cases-nav_active {
@@ -376,7 +376,7 @@
       &:before {
          content: "";
          display: block;
-         margin-bottom: 5px;
+         margin-bottom: 10px;
          height: 1px;
          width: 95%;
          background-color: #5F6369;
@@ -492,6 +492,10 @@
          transform: translate(-50%, -50%);
          width: 14px;
          height: 11px;
+      }
+      @media (max-width: 570px) {
+         top: -5px;
+         left: -5px;
       }
    }
 }
