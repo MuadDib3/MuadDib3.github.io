@@ -253,7 +253,6 @@
       max-width: 640px;
       min-width: 425px;
       width: 100%;
-      max-height: 800px;
       @media (max-width: 1024px) {
          min-width: 300px;
       }
@@ -320,6 +319,15 @@
       line-height: 140%;      
       /* Near Black */      
       color: #0F1319;
+
+      &:before {
+         content: "";
+         display: inline-block;
+         margin-right: 30px;
+         height: 3px;
+         width: 5px;
+         background-color: black;
+      }
       
       &:after {
          content: "";
