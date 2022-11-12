@@ -1,10 +1,8 @@
-$(".use-cases-text__nav-item").on("click", function() {
-
-   $(this).find('.use-cases-text__nav-description').slideToggle('fast');
-   $(this).find('.use-cases-text__nav-button').slideToggle('fast');
-
-   });
-
+const useCasesToggle = document.getElementById('use-cases-nav');
+useCasesToggle.addEventListener("click", event => {
+   event.target.classList.toggle('use-cases-nav_active');
+   
+})
 
 function toggleForm() {
    document.body.classList.toggle("no-scroll");
@@ -16,7 +14,6 @@ const burger = document.getElementById('header-menu__burger');
 const menu = document.getElementById('header-content');
 const links = document.getElementById('header-content__links');
 const buttonHeader = document.getElementById('header-menu__button');
-
 
 burger.addEventListener("click", function() {
    burger.classList.toggle("header-menu_active");
