@@ -339,6 +339,9 @@
    &__item {
       position: relative;
       cursor: pointer;
+      max-height: 40px;
+      margin-bottom: 10px;
+      overflow: hidden;
       font-family: 'Michroma';
       font-style: normal;
       font-weight: 400;
@@ -346,8 +349,6 @@
       line-height: 140%;      
       color: #0F1319;
       height: auto;
-      max-height: 40px;
-      overflow: hidden;   
       transition: all 350ms;   
       &.use-cases-nav_active {
          max-height: 300px;
@@ -355,14 +356,14 @@
 
       &:after {
          position: absolute;
-         top: 5px;
+         top: 12px;
          right: 10px;
          content: "";
          display: inline-block;
          margin-right: 30px;
          height: 20px;
          width: 20px;
-         background-image: url(/Jumbo/img/arrow-in-circle.svg);
+         background-image: url(/img/arrow-in-circle.svg);
          background-position: 0 0;
          background-repeat: no-repeat;
          background-size: contain;
@@ -390,7 +391,7 @@
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 1.1rem;
       line-height: 150%;    
       color: #5F6369;
    }
@@ -519,7 +520,7 @@
       width: 100%;
       overflow: hidden;
       border-top-right-radius: 1000px;
-      background-image: url(/Jumbo/img/home/image2.jpg);
+      background-image: url(/img/home/image2.jpg);
       background-position: 30% 50%;
       background-repeat: no-repeat;
       @media (max-width: 750px) {
