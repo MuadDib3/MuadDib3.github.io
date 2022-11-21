@@ -45,7 +45,7 @@ body {
 .form-button {
    width: 198px;
    cursor: pointer;
-   padding: 0 24px;
+   padding: 0 22px;
    height: 56px;
    line-height: 52px;
    text-align: center;
@@ -152,14 +152,14 @@ body {
 .header-menu {
    
    &__button {
-      outline: 2px solid #BFF489;
+      border: 2px solid #BFF489;
       background: none;
       color: white;
       flex-shrink:0;
       &.header-menu_active {
          background: linear-gradient(135deg, #BFF489 0%, #97DAFF 100%);
          color: white;
-         outline: none;
+         border: none;
          animation-name: menu-active;
          animation-duration: 1s;
          animation-fill-mode: forwards;
@@ -168,7 +168,7 @@ body {
 
       &:hover {
             color: #0F1319;
-            outline : none;
+            border : none;
             background: linear-gradient(135deg, #BFF489 0%, #97DAFF 100%);
          }
       @media (max-width: 950px) {
@@ -323,14 +323,14 @@ body {
       margin-bottom: 80px;
       margin-left: 50%;
       transform: translateX(-50%);
-      outline: 2px solid #BFF489;
+      border: 2px solid #BFF489;
       background: none;
       color: white;
       border-radius: 28px;
       &:hover {
          line-height: 56px;
          color: #0F1319;
-         outline : none;
+         border : none;
          background: linear-gradient(135deg, #BFF489 0%, #97DAFF 100%);
       } 
    }
