@@ -116,7 +116,7 @@ body {
          animation-direction: reverse;
          @media (max-width: 950px) {
             display: none;
-            animation-duration: 1s;
+            animation-duration: 150ms;
             animation-fill-mode: backwards;
             animation-direction: reverse;
             
@@ -125,7 +125,7 @@ body {
                display: flex;
                flex-direction: column;
                animation-name: menu-active;
-               animation-duration: 1s;
+               animation-duration: 150ms;
                animation-fill-mode: forwards;
                animation-direction: normal;
             }
@@ -161,7 +161,7 @@ body {
          color: white;
          border: none;
          animation-name: menu-active;
-         animation-duration: 1s;
+         animation-duration: 150ms;
          animation-fill-mode: forwards;
          display: block;
       }

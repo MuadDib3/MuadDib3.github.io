@@ -187,9 +187,9 @@
       max-width: 200px;
       min-width: 180px;
       width: 100%;
-      height: 160px;
       border-radius: 16px;
       padding: 24px;
+      flex-grow: 1;
       &:nth-child(1) {
          background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(178, 163, 250, 0.32) 100%);
          .product-nav__icon {
@@ -226,6 +226,13 @@
          }
          background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 228, 132, 0.32) 100%);
       }
+
+      @media (max-width: 750px) {
+         max-width: 30%;
+      }
+      @media (max-width: 450px) {
+         max-width: 80%;
+      }
       }
 
    &__icon {
@@ -240,6 +247,9 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+   }
+   @media (max-width: 450px) {
+      margin-bottom: 15px;
    }
    }
 
@@ -507,6 +517,7 @@
 
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       gap: 25px;
       
 }
@@ -519,7 +530,7 @@
       max-width: 600px;
       width: 100%;
       overflow: hidden;
-      border-top-right-radius: 1000px;
+      border-top-right-radius: 100% 100%;
       background-image: url(/Jumbo/img/home/image2.jpg);
       background-position: 30% 50%;
       background-repeat: no-repeat;
