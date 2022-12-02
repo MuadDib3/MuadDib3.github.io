@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open Sans&family=Open+Sans:wght@400;500;600;700&display=swap');
 
 //!-------------------------header--------------------
 
@@ -49,7 +48,7 @@
       transform: translateX(-50%);
       max-width: 960px;
       width: 100%;
-      font-family: 'Michroma';
+      font-family: 'Alexandria';
       font-style: normal;
       font-weight: 400;
       font-size: 4.25rem;
@@ -158,6 +157,9 @@
          max-width: 650px;
          margin-bottom: 50px;
       }
+      @media (max-width: 750px) {
+         gap: 13px;
+      } 
    }
 
    &__button {
@@ -167,10 +169,10 @@
       height: 56px;
       background: linear-gradient(135deg, #B2A3FA 0%, #97DAFF 99.99%);
       border-radius: 100px;
-      font-family: 'Michroma';
+      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
-      font-size: 0.875rem;
+      font-size: 1rem;
       line-height: 56px;
       /* identical to box height, or 171% */      
       text-align: center;
@@ -185,7 +187,6 @@
    &__item {
       padding: 20px;   
       max-width: 200px;
-      min-width: 180px;
       width: 100%;
       border-radius: 16px;
       padding: 24px;
@@ -228,11 +229,14 @@
       }
 
       @media (max-width: 750px) {
-         max-width: 30%;
+         max-width: 180px;
       }
+      
       @media (max-width: 450px) {
-         max-width: 80%;
+         max-width: 150px;
       }
+
+
       }
 
    &__icon {
@@ -254,9 +258,10 @@
    }
 
    &__text {
-      font-family: 'Michroma';
+      // display: inline-block;
+      font-family: 'Open Sans';
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       font-size: 1rem;
       line-height: 23px;
       
@@ -320,7 +325,7 @@
 
    &__title {
       margin-bottom: 80px;
-      font-family: 'Michroma';
+      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 2,625rem;
@@ -352,7 +357,7 @@
       max-height: 40px;
       margin-bottom: 10px;
       overflow: hidden;
-      font-family: 'Michroma';
+      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 1.25rem;
@@ -463,7 +468,7 @@
       margin-top: 16px;
       position: relative;
       z-index: 120;
-      font-family: 'Michroma';
+      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 0.875rem;
@@ -571,7 +576,7 @@
    &__title {
 
       margin-bottom: 56px;
-      font-family: 'Michroma';
+      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 3rem;
@@ -599,7 +604,7 @@
       background: linear-gradient(135deg, #BFF489 0%, #97DAFF 100%);
       border-radius: 100px;
       text-align: center;
-      font-family: 'Michroma';
+      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 0.875rem;
