@@ -37,7 +37,7 @@
    background-size: 1100px 1000px, 1000px 1100px, 1000px 1000px, 1000px 1000px, 100% 100%;
    background-repeat: no-repeat;
    animation-name: background-anim;
-   animation-duration: 10s;
+   animation-duration: 3s;
    animation-timing-function: linear;
    animation-iteration-count: infinite;
 
@@ -87,19 +87,13 @@
    &__icons {
       display: flex;
       justify-content: space-between;
-      margin: 0 auto;
-      padding: 0 5% 160px 5%;
+      padding-bottom: 160px;
       gap: 15px;
       @media (max-width: 750px) {
          padding: 0 5% 80px 5%;
       }
    }
-}
-.title-icons {
-   &__item {
-      height: 56px;
-   }
-}   
+}  
 
 
 
@@ -415,13 +409,13 @@
       display: block;
       margin-bottom: 15px;
       width: 107px;
-      height: 32px;
-      padding: 4px 12px;     
+      height: 32px;  
       background: linear-gradient(135deg, #B2A3FA 0%, #FFA6BB 99.99%);
       border-radius: 22px;
+      text-align: center;
       font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;    
+      font-size: 1rem;
+      line-height: 32px;    
       letter-spacing: 0.02em;            
       color: #0F1319;
    }
@@ -463,7 +457,7 @@
    }
 }
 
-.use-cases-imgtext {
+.use-cases-img-text {
    &__name {
       margin-top: 16px;
       position: relative;
@@ -472,9 +466,7 @@
       font-style: normal;
       font-weight: 400;
       font-size: 0.875rem;
-      line-height: 24px;
-      /* identical to box height, or 171% */      
-            /* White */      
+      line-height: 24px;   
       color: #FFFFFF;      
    }
 
@@ -485,10 +477,7 @@
       font-style: normal;
       font-weight: 500;
       font-size: 0.875rem;
-      line-height: 16px;
-      /* identical to box height, or 114% */      
-      
-      /* p/on dark */      
+      line-height: 16px;    
       color: #B0B4B9;      
    }
 
@@ -497,8 +486,7 @@
       width: 40px;
       height: 40px;
       left: -12px;
-      top: -12px;      
-      /* Accents/Pink */      
+      top: -12px;          
       background: #FFA6BB;
       border-radius: 20px;
       z-index: 120;
@@ -530,25 +518,30 @@
 .blog-content {
    
    &__img {
-      flex-basis: 400px;
-      flex-grow: 1;
+      flex-basis: 300px;
       flex-shrink: 1;
+      flex-grow: 1;
       margin-top: 20px;
       max-width: 600px;
       width: 100%;
-      overflow: hidden;
-      border-top-right-radius: 100% 100%;
-      
+      display: flex;
+      img {
+         align-self:flex-end;
+         display: block;
+         overflow: hidden;
+         border-top-right-radius: 100%;
+      }
       }
 
    &__text {
-      flex-basis: 300px;
-      flex-grow: 1;
+      flex-basis: 400px;
       flex-shrink: 1;
+      flex-grow: 1;
       margin-top: 100px;
       max-width: 565px;
       width: 100%;
-      margin-bottom: 80px;
+      margin-left: 30px;
+      margin-bottom: 15px;
       @media (max-width: 750px) {
          margin-top: 10px;
          max-width: 400px;
@@ -565,10 +558,8 @@
       font-style: normal;
       font-weight: 500;
       font-size: 1rem;
-      line-height: 104%;
-      /* identical to box height, or 17px */      
-      text-transform: uppercase;      
-      /* Near Black */      
+      line-height: 104%;  
+      text-transform: uppercase;           
       color: #0F1319;
             
    }
@@ -588,16 +579,17 @@
          -webkit-text-fill-color: transparent;
          background-clip: text;    
       }
-      @media (max-width: 950px) {
+      @media (max-width: 1150px) {
          font-size: 2.5rem;
       }
-      @media (max-width: 550px) {
+      @media (max-width: 950px) {
          font-size: 2rem;
       }
    }
 
    &__link {
-      display: block;   
+      display: block;  
+      margin: 0 auto; 
       width: 229px;
       height: 56px;         
       background: linear-gradient(135deg, #BFF489 0%, #97DAFF 100%);
@@ -606,7 +598,7 @@
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
-      font-size: 0.875rem;
+      font-size: 1rem;
       line-height: 56px;    
       color: #0F1319;                 
    }

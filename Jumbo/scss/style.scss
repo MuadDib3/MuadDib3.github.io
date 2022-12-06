@@ -109,30 +109,30 @@ body {
    }
 
 	&__links {
-         max-width: 544px;
-         width: 100%;
-         display: flex;
-         gap: 16px;
-         justify-content: space-between;
-         animation-duration: 1s;
+      max-width: 544px;
+      width: 100%;
+      display: flex;
+      gap: 16px;
+      justify-content: space-between;
+      animation-duration: 1s;
+      animation-fill-mode: backwards;
+      animation-direction: reverse;
+      @media (max-width: 950px) {
+         display: none;
+         animation-duration: 150ms;
          animation-fill-mode: backwards;
          animation-direction: reverse;
-         @media (max-width: 950px) {
-            display: none;
-            animation-duration: 150ms;
-            animation-fill-mode: backwards;
-            animation-direction: reverse;
             
-            &.header-menu_active {
+         &.header-menu_active {
                
-               display: flex;
-               flex-direction: column;
-               animation-name: menu-active;
-               animation-duration: 150ms;
-               animation-fill-mode: forwards;
-               animation-direction: normal;
-            }
+            display: flex;
+            flex-direction: column;
+            animation-name: menu-active;
+            animation-duration: 150ms;
+            animation-fill-mode: forwards;
+            animation-direction: normal;
          }
+      }
    }
 
    &__menu {
@@ -161,7 +161,6 @@ body {
       flex-shrink:0;
       &.header-menu_active {
          background: linear-gradient(135deg, #BFF489 0%, #97DAFF 100%);
-         color: white;
          border: none;
          animation-name: menu-active;
          animation-duration: 150ms;
@@ -178,7 +177,8 @@ body {
          width: 120px;
          height: 40px;
          font-size: 0.85rem;
-         line-height: 0.85rem;            
+         line-height: 0.85rem;
+         color: #0F1319;            
          }
       @media (max-width: 950px) {
          display: none;
