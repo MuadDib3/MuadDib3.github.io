@@ -517,7 +517,7 @@
 
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
+      flex-wrap: wrap-reverse;
       gap: 25px;
       
 }
@@ -525,21 +525,21 @@
 .blog-content {
    
    &__img {
-
+      flex-basis: 400px;
+      flex-grow: 1;
+      flex-shrink: 1;
       margin-top: 20px;
       max-width: 600px;
       width: 100%;
       overflow: hidden;
       border-top-right-radius: 100% 100%;
-      background-image: url(/Jumbo/img/home/image2.jpg);
-      background-position: 30% 50%;
-      background-repeat: no-repeat;
-      @media (max-width: 750px) {
-         display: none;
-      }
+      
       }
 
    &__text {
+      flex-basis: 300px;
+      flex-grow: 1;
+      flex-shrink: 1;
       margin-top: 100px;
       max-width: 565px;
       width: 100%;
@@ -594,8 +594,7 @@
    &__link {
       display: block;   
       width: 229px;
-      height: 56px;      
-      /* Gradient/GreenBlue */      
+      height: 56px;         
       background: linear-gradient(135deg, #BFF489 0%, #97DAFF 100%);
       border-radius: 100px;
       text-align: center;
@@ -603,9 +602,7 @@
       font-style: normal;
       font-weight: 400;
       font-size: 0.875rem;
-      line-height: 56px; 
-      letter-spacing: 0.02em;      
-      /* Near Black */      
+      line-height: 56px;    
       color: #0F1319;                 
    }
 }
