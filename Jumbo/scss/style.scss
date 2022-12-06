@@ -1,20 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Open+Sans:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 html {
    font-size: 16px;
    @media (max-width: 768px) {
-      font-size: 13px;
+      font-size: 14px;
    }
 }
 
 body {
    font-size: 16px;
-   font-family: 'Michroma', sans-serif;
+   font-family: 'Open Sans', sans-serif;
    color: #0F1319;
    &.no-scroll {
       overflow: hidden;
@@ -32,7 +28,7 @@ body {
    @media (max-width: 1024px) {
          padding: 0 50px;
    }
-   @media (max-width: 580px) {
+   @media (max-width: 750px) {
       padding: 0 20px;
    }
    @media (max-width: 450px) {
@@ -75,9 +71,9 @@ body {
    padding-bottom: 20px;
    gap: 25px;
    color: white;
-   font-family: 'Michroma', sans-serif;
+   font-family: 'Open Sans', sans-serif;
    position: relative;
-   transition: all 1s;
+   transition: all 150ms;
    @media (max-width: 950px)  {
       align-items: flex-start;
       padding-top: 17px;
@@ -297,7 +293,7 @@ body {
    &__title {
       
       margin-bottom: 16px;              
-      font-family: 'Michroma';
+      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 2.5rem;
@@ -525,7 +521,7 @@ body {
 
    &__title {
       margin-bottom: 24px;
-      font-family: 'Michroma';
+      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 2.5rem;
@@ -571,7 +567,7 @@ body {
 .modal-form {
 
    &__title {
-      font-family: 'Michroma';
+      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 600;
       font-size: 1.5rem;
@@ -613,7 +609,7 @@ body {
 
    &__submit {
       padding: 16px 84px;
-      font-family: 'Michroma', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-style: normal;
       font-weight: 800;
       font-size: 0.875rem;
