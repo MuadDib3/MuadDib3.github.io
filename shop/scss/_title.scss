@@ -1,0 +1,230 @@
+.title {
+
+   margin-top: 263px;
+   margin-bottom: 230px;
+
+   &__logo {
+      margin: 0 auto;
+      width: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      line-height: 25px;
+      letter-spacing: -2px;
+      gap: 20px;
+      img {
+         max-width: 40px;
+         width: 100%;
+      }
+      span {
+         display: inline-block;
+      }
+      margin-bottom: 35px;
+   }
+
+   &__item {
+      margin-bottom: 57px;
+      font-family: 'Usually';
+      font-weight: 700;
+      font-size: 130px;
+      line-height: 113px;
+      text-align: center;
+      text-transform: uppercase;    
+      position: relative;  
+      &:after {
+         content:'Одежда для каждого';
+         position: absolute;
+         top: 0;
+         left: 50%;
+         width: 100%;
+         transform: translateX(-49.7%);;
+         font-family: 'Usually';
+         font-weight: 700;
+         font-size: 130px;
+         line-height: 113px;
+         text-align: center;
+         text-transform: uppercase; 
+         color: #A332CA;
+         z-index: -1;         
+      }
+      &:before {
+         content:'Одежда для каждого';
+         position: absolute;
+         top: 0;
+         left: 50%;
+         width: 100%;
+         transform: translateX(-50.3%);;
+         font-family: 'Usually';
+         font-weight: 700;
+         font-size: 130px;
+         line-height: 113px;
+         text-align: center;
+         text-transform: uppercase; 
+         color: #D1C12B;
+         z-index: -1;         
+      }
+   }
+
+   &__descr {
+      font-family: 'Uindbase Font 1';
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 25px;
+      text-align: center;
+      text-transform: uppercase;    
+      margin-bottom: 173px;  
+   }
+
+   &__link {
+      margin-left: 90%;
+      transform: translateX(-100%);
+   }
+}
+.title-item__background {
+   top: -20px;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 165px;
+   line-height: 148px; 
+   width: 100%;
+}
+
+@media (max-width: 1600px) {
+
+   .title-item__background{
+   font-size: 140px;
+   line-height: 130px;
+   }
+   .title__item {
+      font-size: 100px;
+      line-height: 87px;
+      &:before {
+         font-size: 100px;
+         line-height: 87px;
+      }
+      &:after {
+         font-size: 100px;
+         line-height: 87px;
+      }
+   }
+}
+
+@media (max-width: 1336px) {
+
+   .title-item__background{
+   top: -70px;
+   font-size: 120px;
+   line-height: 100px;
+   max-width: 1067px;
+   }   
+   .title__logo {
+      margin-bottom: 60px;
+   }
+}
+   
+@media (max-width: 992px) {
+
+   .title-item__background{
+   font-size: 105px;
+   line-height: 90px;
+   }
+
+   .title__logo {
+      font-size: 23px;
+      line-height: 23px;
+      img {
+         max-width: 30px;
+         width: 100%;
+      }
+   }
+   .title__item {
+      font-size: 85px;
+      line-height: 80px;
+      &:before {
+         font-size: 85px;
+         line-height: 80px;
+      }
+      &:after {
+         font-size: 85px;
+         line-height: 80px;
+      }
+   }
+}
+
+@media (max-width: 866px) {
+
+   .title {
+      margin-top: 200px;
+   }
+
+   .title__descr {
+      margin-bottom: 150px;
+   }
+
+   .title-item__background{
+   font-size: 95px;
+   line-height: 85px;
+   top: -70px;
+   }
+   .title__item {
+      font-size: 60px;
+      line-height: 55px;
+      &:before {
+         font-size: 60px;
+         line-height: 55px;
+      }
+      &:after {
+         font-size: 60px;
+         line-height: 55px;
+      }
+   }
+}
+
+@media (max-width: 690px) {
+
+   .title {
+      margin-top: 108px;
+   }
+
+   .title-item__background{
+   font-size: 65px;
+   line-height: 55px;
+   top: -40px;
+   max-width: 600px;
+   }
+   .title__item {
+      font-size: 50px;
+      line-height: 45px;
+      &:before {
+         font-size: 50px;
+         line-height: 45px;
+      }
+      &:after {
+         font-size: 50px;
+         line-height: 45px;
+      }
+   }
+}
+
+@media (max-width: 510px) {
+
+   .title-item__background {
+      font-size: 45px;
+      line-height: 40px;
+      top: -40px;
+      max-width: 600px;
+   }
+   .title__item {
+      font-size: 35px;
+      line-height: 30px;
+      &:before {
+         font-size: 35px;
+         line-height: 30px;
+      }
+      &:after {
+         font-size: 35px;
+         line-height: 30px;
+      }
+   }
+}

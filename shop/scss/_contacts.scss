@@ -1,0 +1,142 @@
+.contacts {
+
+   margin-bottom: 126px;
+
+   &__title {
+      font-family: 'Uindbase Font 1';
+      font-weight: 400;
+      font-size: 100px;
+      line-height: 100px;
+      text-transform: uppercase;
+      position: relative;
+      margin-bottom: 55px;
+   }
+
+   &__map {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
+
+.contscts-title__background {
+   top: -30px;
+   font-size: 180px;
+   line-height: 160px;
+   text-transform: uppercase;   
+}
+
+.map {
+
+   &__item {
+      flex-basis: 64%;
+   }
+
+   &__links {
+      flex-basis: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+   }
+}
+.map__links .links__item {
+   font-family: 'Uindbase Font 1';
+   font-weight: 400;
+   font-size: 25px;
+   line-height: 25px;
+   text-transform: uppercase
+   }
+
+
+@media (max-width: 1600px){
+   .contacts__title {
+      font-size: 80px;
+      line-height: 80px;
+   }
+   .contscts-title__background {
+      font-size: 140px;
+      line-height: 140px;
+   }
+}
+
+@media (max-width: 1336px){
+   .contacts__title {
+      font-size: 60px;
+      line-height: 60px;
+   }
+   .contscts-title__background {
+      font-size: 120px;
+      line-height: 120px;
+   }  
+
+   .contacts__map {
+      flex-wrap: wrap;
+      gap: 36px;
+   }
+}
+
+@media (max-width: 1040px){
+
+   .contacts__title {
+      font-size: 55px;
+      line-height: 55px;
+   }
+
+   .contscts-title__background {
+      font-size: 105px;
+      line-height: 105px;
+   } 
+}
+
+@media (max-width: 866px){
+   .contscts-title__background {
+      font-size: 85px;
+      line-height: 85px;
+   } 
+}
+
+@media (max-width: 710px){
+
+   .contacts__title {
+      padding-right: 135px;
+      font-size: 50px;
+      line-height: 50px;
+   }
+
+   .contscts-title__background {
+      font-size: 65px;
+      line-height: 65px;
+      top: 0px;
+   } 
+}
+
+@media (max-width: 550px){
+   .contacts__title {
+      padding-right: 0px;
+      word-spacing: -2px;
+   }
+   .contscts-title__background {
+      font-size: 50px;
+      line-height: 50px;
+   } 
+
+   .map__links .links__item {
+      font-size: 18px;
+      line-height: 18px;
+   }
+}
+
+@media (max-width: 420px){
+   .contacts__title {
+      font-size: 35px;
+      line-height: 35px;
+   }
+
+   .contscts-title__background {
+      font-size: 35px;
+      line-height: 35px;
+      top: 20px;
+   } 
+}

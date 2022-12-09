@@ -1,0 +1,235 @@
+.actual {
+
+   margin-bottom: 120px;
+
+   &__title {
+      font-family: 'Uindbase Font 1';
+      font-weight: 400;
+      font-size: 100px;
+      line-height: 100px;
+      text-align: right;
+      text-transform: uppercase;
+      position: relative;   
+      margin-bottom: 61px;   
+   }
+
+   &__galery {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+      width: 79.5%;
+      margin: 0 auto;
+   }
+
+   &__link {
+      width: 79.5%;
+      margin: 0 auto;
+      margin-top: 60px;
+      font-family: 'Uindbase Font 1';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: right;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #FFFFFF;      
+   }
+}
+
+.actual-title__background {
+   font-size: 160px;
+   line-height: 160px;
+   text-align: right;
+   top: -68px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 100%;
+   word-spacing: -30px;
+}
+
+.galery__item {
+   flex-basis: 280px;
+   height: 461px;
+   background-color: #10171F;
+   background-repeat: no-repeat;
+   background-size: auto 373px;
+   background-position: 50% 0%;
+   border-radius: 10px;
+   display: grid;
+   align-items: start;
+   align-content: end;
+   grid-template-columns: 0.7fr 1.3fr; 
+   grid-template-rows: 55px 27px;
+   grid-template-areas: "title title"  
+                        "price link"  
+}
+
+.galery__item .item {
+
+   &__title {
+      padding-left: 7px;
+      grid-area: title;
+      font-family: 'Uindbase Font 1';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;      
+   }
+
+   &__price {
+      padding-left: 7px;
+      grid-area: price;
+      font-family: 'Uindbase Font 1';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;      
+   }
+
+   &__button {
+      padding-left: 7px;
+      padding-right: 14px;
+      grid-area: link;
+      justify-self: end;
+      font-family: 'Uindbase Font 1';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;  
+      button {
+         text-decoration-line: underline;
+         text-transform: uppercase;
+      }
+   }
+}
+
+@media (max-width: 1600px){
+   .actual-title__background {
+      padding-left: 100px;
+   }
+
+   .actual__galery {
+      gap: 20px;
+      justify-content: space-around;
+      width: 90%;
+   }
+   .actual__link {
+      width: 90%;
+   }
+}
+
+@media (max-width: 1336px){
+   .actual-title__background {
+      font-size: 140px;
+      line-height: 140px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .galery__item:last-child {
+      display: none;
+   }
+
+   .actual-title__background {
+      font-size: 120px;
+      line-height: 120px;
+   }
+}
+
+@media (max-width: 866px){
+
+   .actual-title__background {
+      font-size: 90px;
+      line-height: 90px;
+   }
+
+   .actual__galery {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+   }
+   .galery__item:last-child {
+      display: grid;
+   }
+}
+
+@media (max-width: 710px){
+   
+   .actual__title {
+      margin-bottom: 50px;
+      font-size: 60px;
+      line-height: 60px;
+   }
+   .actual-title__background {
+      font-size: 80px;
+      line-height: 80px;
+      padding: 0;
+   }
+
+   .actual__galery {
+      gap: 20px;
+      padding: 0 30px;
+   }
+   .galery__item {
+      flex-basis: 180px;
+      height: 333px;
+      background-size: auto 250px;
+   }
+
+   .galery__item .item {
+      &__button {
+         font-size: 15px;
+         line-height: 15px;
+      }
+      &__price{
+         font-size: 15px;
+         line-height: 15px;
+      }
+      &__title{
+         font-size: 15px;
+         line-height: 15px;
+      }
+   }
+
+}
+
+@media (max-width: 510px){
+
+   .actual__title {
+      font-size: 55px;
+      line-height: 55px;
+   }
+
+   .actual__galery {
+      padding: 0;
+      width: 100%;
+   }
+}
+
+@media (max-width: 420px){
+
+   .actual__title {
+      font-size: 48px;
+      line-height: 48px;
+   }
+
+   .galery__item{
+      flex-basis: 280px;
+      height: 461px;
+      background-size: auto 373px;
+   }
+   .galery__item .item {
+      &__button {
+         font-size: 20px;
+         line-height: 20px;
+      }
+      &__price{
+         font-size: 20px;
+         line-height: 20px;
+      }
+      &__title{
+         font-size: 20px;
+         line-height: 20px;
+      }
+   }
+}

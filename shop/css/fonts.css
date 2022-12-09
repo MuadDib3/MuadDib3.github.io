@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Usually";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/fonts/Usually-font-Bold.woff);
+}
+@font-face {
+  font-family: "Usually";
+  font-weight: 700;
+  font-style: normal;
+  src: url(/fonts/Usually-font-Bold.woff);
+}
+@font-face {
+  font-family: "Uindbase Font 1";
+  src: url(/fonts/UF1.woff);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+   font-family: "Roboto";
+   src: url(/fonts/Roboto-Light.woff);
+   font-style: normal;
+   font-weight: 300;
+}
+@font-face {
+   font-family: "Roboto";
+   src: url(/fonts/Roboto-Medium.woff);
+   font-style: normal;
+   font-weight: 500;
+}

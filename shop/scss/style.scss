@@ -1,0 +1,103 @@
+
+html {
+   background: #0B0F14;
+   color: #fff;
+   width: 100vw;
+}
+
+body {
+   font-family: 'Uindbase Font 1';
+   font-size: 16px;  
+   overflow-x: hidden;
+   border: #0fd819 solid 2px;
+}
+
+.no-scroll {
+   overflow: hidden;
+   height: 100%;
+}
+
+section {
+   border: #d80f0f solid 2px;
+}
+
+.container {
+   max-width: 1600px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+//!--------------------components-------------------------
+
+//---------------social links------------
+.social-links {
+   display: flex;
+   gap: 7px;
+}
+
+.links {
+		&__item {
+         display: block;
+         height: 20px;
+         img {
+            height: 100%;
+         }
+      }
+}
+
+//----------------link_yellow-----------------
+
+.link_yellow {
+   display: inline-block;
+   min-width: 205px;
+   border: 2px solid currentColor;
+   border-radius: 50px;
+   color: #D1C12B;
+   padding: 12px 30px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   font-size: 21px;
+   text-align: center;
+   text-transform: uppercase;   
+   &:before {
+      content: '';
+      width: 23px;
+      height: 16px;
+      margin-right: 25px;
+      display: inline-block;
+      background-image: url(/img/yellowLogo.svg);
+      background-repeat: no-repeat;
+   }
+   &:hover {
+      filter: drop-shadow( 0 0 5px #D1C12B);
+      -webkit-filter: drop-shadow( 0 0 5px #D1C12B);
+   }
+}
+
+//----------------background-text-------------
+
+.background-text {
+   overflow-wrap: break-word;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -10;
+   font-family: 'Usually';
+   text-align: center;
+   text-transform: uppercase; 
+   font-weight: 700;
+   font-style: normal;
+   color: #1F252D;
+}
+
+
+
+//!--------------------------import------------------------------
+@import "_header.scss";
+@import "_title.scss";
+@import "_collection.scss";
+@import "_actual.scss";
+@import "_contacts.scss";
+@import "_footer.scss";
+@import "_burger.scss";
